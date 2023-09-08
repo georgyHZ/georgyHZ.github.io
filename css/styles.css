@@ -6,20 +6,17 @@
         font-size: 100%;
         vertical-align: baseline;
         background: transparent;
+        font-family: 'Courier New', Courier, monospace;
+        z-index: 2;
 }
 
-
-#heading-logo {
-    font-family:'Times New Roman', Times, serif;
-    font-style: oblique;
-    font-weight: 400;
-    font-size: 2em;
-    margin-left: 2vw;
-    margin-top: 1.5vw;
-}
-
-#nav-bar {
-    margin: none;
+div h1 {
+    background-color: whitesmoke;
+    width: 45vw;
+    opacity: 60%;
+    display: inline-block;
+    text-indent: 10px   ;
+    margin-left: 1.5vw;
 }
 
 ul {
@@ -29,9 +26,59 @@ ul {
     overflow: hidden;
 }
 
+li a {
+    color: Black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    overflow: auto;
+    width: 100vw;
+    height: 8vw;
+    background-color: gainsboro;
+    box-shadow: 1px 5px 5px #5C5858; 
+    z-index: 1; 
+  }
+  
+  footer {
+    position: fixed;
+    overflow: auto;
+    margin-top: 6vh;
+    width: 100vw;
+    height: 1.5vw;
+    background-color: gainsboro;
+    z-index: 1; 
+  }
+
+body {
+    background-color: #a3b68a;
+    min-height: 100vh;
+    align-self: center;
+  }
+
+a {
+    box-shadow: inset 0 0 0 0 #a3b68a;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+a:hover {
+    box-shadow: inset 10rem 0 0 0 #504A4B;
+    color: white;
+  }
+
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
 .navbar-list {
     margin-left: 10vw;
-    margin-top: -3vw;
+    margin-top: -4vw;
 }
 
 .navbar-link {
@@ -41,38 +88,45 @@ ul {
     float: left;
 }
 
-li a {
-    color: Black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.home-paragraph {
+    font-size: 0.9em;
+    padding-top: 1vw;
+    margin-left: 1.7em;
+    width: 45vw;
+    border-left: 1px solid #504A4B;
+    padding-left: 0.7vw;
 }
 
-  header {
-    position: fixed;
-    width: 100vw;
-    height: 8vw;
-    background-color: gainsboro;
-    box-shadow: 1px 5px 5px #5C5858;
-    
-  }
-  
-  body {
-    background-color: #a3b68a;
-  }
+.home-img1 {
+    width: 30vw;
+    height: 11.3vw;
+    margin-top: 10em;
+    margin-right: 32vw;
+    margin-left: 5vw;
+    position: absolute;
+}
 
-  a {
-    box-shadow: inset 0 0 0 0 #a3b68a;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
-  a:hover {
-    box-shadow: inset 10rem 0 0 0 #504A4B;
-    color: white;
-  }
+.home-img2 {
+    width: 30vw;
+    height: 11.3vw;
+    margin-top: 2em;
+    margin-right: 32vw;
+    margin-left: 5vw;
+    position: absolute;
+}
 
-  .active {
-    text-decoration: underline;
-    font-weight: bold;
-  }
+.home-list {
+    margin-left: 5%;
+    margin-top: 2.4em;
+    list-style-type: disc;
+}
+
+#heading-logo {
+    height: 6em;
+    margin-top: 0.4em;
+    margin-left: -0.7em;
+}
+
+#nav-bar {
+    margin: none;
+}
