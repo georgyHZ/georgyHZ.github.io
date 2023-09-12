@@ -20,7 +20,6 @@ div h1 {
 }
 
 ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -42,16 +41,6 @@ header {
     box-shadow: 1px 5px 5px #5C5858; 
     z-index: 1; 
   }
-  
-  footer {
-    position: fixed;
-    overflow: auto;
-    margin-top: 6vh;
-    width: 100vw;
-    height: 1.5vw;
-    background-color: gainsboro;
-    z-index: 1; 
-  }
 
 body {
     background-color: #a3b68a;
@@ -63,8 +52,16 @@ a {
     box-shadow: inset 0 0 0 0 #a3b68a;
     margin: 0 -.25rem;
     padding: 0 .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
   }
+
+th, td {
+    border: 1px solid #a3b68a;
+    background-color: whitesmoke;
+    opacity: 60%;
+    width: 100vh;
+    text-align: center;
+}
 
 a:hover {
     box-shadow: inset 10rem 0 0 0 #504A4B;
@@ -87,6 +84,21 @@ a:hover {
     list-style-type: none;
     float: left;
 }
+
+.footer {
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3vw;
+    background-color: gainsboro;
+    color: white;
+    text-align: center;
+    color: gainsboro;
+    box-shadow: 5px 1px 5px 5px #5C5858;
+  }
 
 .home-paragraph {
     font-size: 0.9em;
@@ -115,10 +127,91 @@ a:hover {
     position: absolute;
 }
 
+.profile-img {
+    margin-top: 18vh;
+    margin-left: 1.7em;
+    height: 50vh;
+    width: 50%;
+    float: left;
+    
+    
+}
+
 .home-list {
-    margin-left: 5%;
-    margin-top: 2.4em;
-    list-style-type: disc;
+    font-size: 0.9em;
+    padding-top: 1vw;
+    margin-left: 1.7em;
+    width: 45vw;
+    border-left: 1px solid #504A4B;
+    padding-left: 0.7vw;
+    list-style-position: inside;
+    list-style-type:circle;
+}
+
+.profile-list {
+    list-style-position: inside;
+    list-style-type: circle;
+    margin-top: 20vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.dashboard-table {
+    padding-top: 11vw;
+}
+
+.bottom-paragraph {
+    margin-bottom: 6vw;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+}
+
+.db-failed {
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    color: red;
+}
+
+.db-passed {
+    text-decoration-color: green;
+    color: green;
+}
+
+.db-pending {
+    text-decoration-style:solid;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+.center-x-y {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.progress-bar {
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 10vh;
+    height: 2.5vh;
+    width:  100vh;
+    border-radius: 2px;
+    background-color: whitesmoke;
+    opacity: 60%;
+}
+
+.progress-bar > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, whitesmoke, black);
+    background-size: 100%;
+    transition: width 200ms;
 }
 
 #heading-logo {
