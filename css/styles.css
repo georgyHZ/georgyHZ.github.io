@@ -97,7 +97,7 @@ a:hover {
     color: white;
     text-align: center;
     color: gainsboro;
-    box-shadow: 5px 1px 5px 5px #5C5858;
+    box-shadow: 5px 1px 5px 4.5px #5C5858;
   }
 
 .home-paragraph {
@@ -110,21 +110,47 @@ a:hover {
 }
 
 .home-img1 {
-    width: 30vw;
-    height: 11.3vw;
-    margin-top: 10em;
-    margin-right: 32vw;
-    margin-left: 5vw;
-    position: absolute;
+    display: inline;
+    float: right;
+    height: 30vh;
+    width: auto;
+    border: 2px double whitesmoke;
+    box-shadow: 0px 7px 7px 0px #504A4B;
+    margin-top: -0.9vw;
+    margin-right: 21%;
 }
 
 .home-img2 {
-    width: 30vw;
-    height: 11.3vw;
-    margin-top: 2em;
-    margin-right: 32vw;
-    margin-left: 5vw;
-    position: absolute;
+    display: inline;
+    float: right;
+    height: 35vh;
+    width: auto;
+    border: 2px double whitesmoke;
+    box-shadow: 0px 7px 7px 0px #504A4B;
+    margin-top: 2.4vw;
+    margin-right: 13.56%;
+}
+
+.home-img3 {
+    display: block;
+    float: right;
+    height: 50vh;
+    width: auto;
+    border: 2px double whitesmoke;
+    box-shadow: 0px 7px 7px 0px #504A4B;
+    margin-top: -60.7vh;
+    margin-right: -40vw;
+}
+
+.home-img4 {
+    display: inline;
+    float: right;
+    height: 47vh;
+    width: auto;
+    border: 2px double whitesmoke;
+    box-shadow: 0px 7px 7px 0px #504A4B;
+    margin-top: -24vh;
+    margin-right: -38vw;
 }
 
 .profile-img {
@@ -159,11 +185,7 @@ a:hover {
 }
 
 .dashboard-table {
-    padding-top: 11vw;
-}
-
-.bottom-paragraph {
-    margin-bottom: 6vw;
+    padding-top: 9.5vw;
 }
 
 .center {
@@ -181,12 +203,6 @@ a:hover {
 .db-passed {
     text-decoration-color: green;
     color: green;
-}
-
-.db-pending {
-    text-decoration-style:solid;
-    text-decoration-line: underline;
-    text-decoration-color: black;
 }
 
 .center-x-y {
@@ -212,6 +228,10 @@ a:hover {
     background-image: linear-gradient(to right, whitesmoke, black);
     background-size: 100%;
     transition: width 200ms;
+}
+
+.minor-separation {
+    margin-top: 1vw;
 }
 
 #heading-logo {
