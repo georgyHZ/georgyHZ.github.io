@@ -1,12 +1,13 @@
 PRIORITY
 
-- Add tooltips
-- Add aside menu
+- Add aside menu <!>
+- Add progress bar <!>
 - Replace placeholder text
 
 SECONDARY
 
 - Fix footer overflow settings when scrolling
+- Center tooltip text in the middle
 
 DISCARDED
 
