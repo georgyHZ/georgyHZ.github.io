@@ -1,0 +1,14 @@
+PRIORITY
+
+- Add tooltips
+- Add aside menu
+- Replace placeholder text
+
+SECONDARY
+
+- Fix footer overflow settings when scrolling
+
+DISCARDED
+
+- Clean up h1 tags (h1 should only be used once per page) /! not using h1 in some places just breaks it
+- Make a class for h1s in index / ! inline styling needed  
