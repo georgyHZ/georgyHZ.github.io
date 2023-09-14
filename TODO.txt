@@ -1,11 +1,10 @@
 PRIORITY
 
-- Add aside menu <!>
-- Add progress bar <!>
 - Replace placeholder text
 
 SECONDARY
 
+- Make the sidebar transition with an animation
 - Fix footer overflow settings when scrolling
 - Center tooltip text in the middle
 

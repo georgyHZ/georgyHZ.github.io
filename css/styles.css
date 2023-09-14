@@ -117,48 +117,12 @@ a:hover {
     padding-left: 0.7vw;
 }
 
-.home-img1 {
-    display: inline;
+.home-img {
     float: right;
-    height: 30vh;
+    height: 60vh;
     width: auto;
-    border: 2px double whitesmoke;
-    box-shadow: 0px 7px 7px 0px #504A4B;
-    margin-top: -0.9vw;
-    margin-right: 21%;
-}
-
-.home-img2 {
-    display: inline;
-    float: right;
-    height: 35vh;
-    width: auto;
-    border: 2px double whitesmoke;
-    box-shadow: 0px 7px 7px 0px #504A4B;
-    margin-top: 2.4vw;
-    margin-right: 13.56%;
-}
-
-.home-img3 {
-    display: block;
-    float: right;
-    height: 50vh;
-    width: auto;
-    border: 2px double whitesmoke;
-    box-shadow: 0px 7px 7px 0px #504A4B;
-    margin-top: -60.7vh;
-    margin-right: -40vw;
-}
-
-.home-img4 {
-    display: inline;
-    float: right;
-    height: 47vh;
-    width: auto;
-    border: 2px double whitesmoke;
-    box-shadow: 0px 7px 7px 0px #504A4B;
-    margin-top: -24vh;
-    margin-right: -38vw;
+    margin-top: 9.9vw;
+    margin-right: -45vw;
 }
 
 .profile-img {
@@ -185,7 +149,9 @@ a:hover {
 .profile-list {
     list-style-position: inside;
     list-style-type: circle;
-    margin-top: 20vw;
+    margin-top: 13vw;
+    margin-right: 10vw;
+    overflow:visible
 }
 
 .flex {
@@ -381,7 +347,7 @@ a:hover {
     font-weight: bolder;
     display:none;
     position:absolute; 
-    z-index: 1;
+    z-index: 100;
     border:1px;
     background-color:black;
     border-style:solid;
@@ -393,7 +359,7 @@ a:hover {
     left:100px;
     width: 30vw;
     height: 100%;
-    
+    overflow: hidden;
   }
   
   .cell-with-comment:hover span.cell-comment{
@@ -428,4 +394,94 @@ a:hover {
   .doublecell-with-comment:hover span.doublecell-comment{
     display:block;
     
+  }
+
+  aside {
+    width: 250px;
+    height: 60vh;
+    margin-top: 9.5vw;
+    right: 0px;
+    background: gainsboro;
+    position: fixed;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 100;
+    box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    border: 1px double black;
+    border-radius: 12px;
+  }
+  
+  aside ul {
+    padding-inline-start: 0;
+    overflow: visible;
+  }
+  
+  aside ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  
+  aside ul li .fas{
+    width: 50px;
+  }
+  
+  .aside-wrapper {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  .logo-text {
+    font-size: 32px;
+    position: relative;
+    background-color: gainsboro;
+    color: gainsboro;
+  }
+  
+  .sidebar-toggle {
+    position: absolute;
+    top: -1vh;
+    right: 119px;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    background: lightskyblue;
+    padding: 4px 11px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  input:checked ~ aside {
+    right: 0px;
+  }
+
+  input:not(:checked) ~ aside {
+    right: -250px;
+  }
+
+  .sidebar-logo {
+    height: auto;
+    width: 60px;
+    margin-top: -16.1vh;
+    margin-left: -7vw;
+  }
+
+  .sidebar-link {
+    overflow: visible;
+    z-index: 1;
+    padding-top: 19px;
+  }
+
+  .dashboard-img {
+    height: 8vw;
+    margin-top: 0.7vw;
+    margin-left: 100px;
   }
