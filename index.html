@@ -1,141 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>GF | Home</title>
-        <meta name="description" content="Georgy's Home page.">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="css/styles.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <header>
-            <nav id="nav-bar">
-                <div>
-                    <img id="heading-logo" src="resources/logo5.png" alt="Georgy Furs site logo"/>
+
+<head>
+    <title>GF | Home</title>
+    <meta name="description" content="Georgy's Blog page.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom ">
+            <div class="container-fluid">
+                <p class="navbar-brand" href="#">
+                    <img id="heading-logo" src="resources/logo5.png" alt="Bootstrap">
+                </p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="navbar-list">
-                    <li class="navbar-link">
-                        <a class="active navbar-styling" href="index.html">Home</a>
-                    </li>
-                    <li class="navbar-link">
-                        <a class="navbar-styling" href="profile.html">Profile</a>
-                    </li>
-                    <li class="navbar-link">
-                        <a class="navbar-styling" href="dashboard.html">Dashboard</a>
-                    </li>
-                    <li class="navbar-link">
-                        <a class="navbar-styling" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="navbar-link">
-                        <a class="navbar-styling" href="blog.html">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main style="float: left;">
-            <div style="float: right;">
-                <input type="checkbox" id="toggler" />
-                <aside class="aside-wrapper">
-                <h1 class="logo-text">
-                    <span>Bookmark</span>
-                    <label for="toggler">
-                        <i class="fas fa-bars sidebar-toggle"></i>
-                    </label>
-                </h1>
-                <img class="sidebar-logo" src="resources/hzlogo.jpg" alt="HZ University Logo"/>
-                <ul>
-                    <li style="margin-top: -11vh;" class="sidebar-link">
-                        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf" target="_blank">
-                            HBO-ICT CER
-                        </a>
-                    </li>
-                    <li class="sidebar-link">
-                        <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank">
-                            HBO-ICT IR
-                        </a>
-                    </li>
-                    <li class="sidebar-link">
-                        <a href="https://learn.hz.nl/my/" target="_blank">
-                            HZ Learn
-                        </a>
-                    </li>
-                    <li class="sidebar-link">
-                        <a href="https://teams.microsoft.com/_#/school/conversations/International?threadId=19:ca826369e55e492aa1efd2016b2fcbbe@thread.skype&ctx=channel" target="_blank">
-                            HZ ICT Teams
-                        </a>
-                    </li>
-                    <li class="sidebar-link">
-                        <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">
-                            MyHZ progress
-                        </a>
-                    </li>
-                    <li class="sidebar-link">
-                        <a href="https://github.com/HZ-HBO-ICT" target="_blank">
-                            HZ ICT GitHub
-                        </a>
-                    </li>
-                </ul>
-                </aside>
             </div>
-            <div>
-                <section>
-                    <img class="home-img" src="resources/bandaid.png" 
-                    alt="Two abstract pictures of a man climbing mountains and a coding IDE environment"/>
-                    <h1 style="margin-top: 9.5vw;">Motivation</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="sidenav position-absolute top-50 start-100 translate-middle container-fluid">
+            <ul class="d-grid gap-4 ">
+                <li class="mt-4">
+                    <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf"
+                        target="_blank">
+                        HBO-ICT CER
+                    </a>
+                </li>
+                <li>
+                    <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+                        target="_blank">
+                        HBO-ICT IR
+                    </a>
+                </li>
+                <li>
+                    <a href="https://learn.hz.nl/my/" target="_blank">
+                        HZ Learn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://teams.microsoft.com/_#/school/conversations/International?threadId=19:ca826369e55e492aa1efd2016b2fcbbe@thread.skype&ctx=channel"
+                        target="_blank">
+                        HZ ICT Teams
+                    </a>
+                </li>
+                <li>
+                    <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">
+                        MyHZ progress
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/HZ-HBO-ICT" target="_blank">
+                        HZ ICT GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid mt-5 mx-4 heading-bolder">
+            <div class="row">
+                <div class="col-8">
+                    <p class="h1 heading">Motivation</p>
                     <p class="home-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Morbi cursus ex eget velit hendrerit, ut efficitur nunc eleifend. 
-                        Nulla facilisi. Donec in pretium felis. Nulla facilisi. 
-                        Cras semper, nisl vitae pharetra pharetra, dolor mi interdum dolor, 
-                        at posuere nulla ante in ex. Vestibulum ante ipsum primis in faucibus orci 
-                        luctus et ultrices posuere cubilia curae; Donec sollicitudin, lacus id suscipit 
-                        ultricies, ligula nunc sollicitudin nunc, at egestas sem tellus et nulla. 
-                        Integer at nulla pretium libero aliquet semper. Donec sed enim pellentesque, 
-                        consectetur ex cursus, pulvinar est. 
-                        Quisque ac mauris nulla. Pellentesque sollicitudin ligula eu erat dictum, 
-                        sit amet scelerisque felis convallis. Suspendisse potenti. Aliquam erat volutpat.
+                        Motivation, a word that can mean different things to different people.
+                        <br>
+                        But by it’s literal definition it’s a reason, a ‘why?,’ for one thing or the other. In this case, what is my reason for choosing ICT?
+                        <br>
+                        First of all I would say that my main reason is a material one. In this day and age with enough determination you can learn almost anything without setting foot in an educational institution. 
+                        <br>
+                        But an education certified and vetoed by a university can not only provide you with better quality hands-on experience than you can usually get by yourself. But it is also pretty much necessary for optimal career growth.
+                        <br>
+                        Secondly I will write a little bit more about my overall motivation for studying ICT.
+                        <br>
+                        There is a proverb that says - “You live a hundred years, you learn a hundred years”. That is a philosophy that I try to take to heart. I’ve judged ICT to be the best thing for me to learn at the moment due to the stability of the professional field and me already being fairly comfortable with some of it’s aspects. 
+                        <br>
+                        If in the future I will not end up being passionate about pursuing it further, I will still be left with a strong starting financial platform for any other venture that I might find myself longing for.
                     </p>
-                </section>
-                <section>
-                    <h1 style="margin-top: 1vw;">Compatibility</h1>
-                    <p class="home-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Morbi cursus ex eget velit hendrerit, ut efficitur nunc eleifend. 
-                        Nulla facilisi. Donec in pretium felis. Nulla facilisi. 
-                        Cras semper, nisl vitae pharetra pharetra, dolor mi interdum dolor, 
-                        at posuere nulla ante in ex. Vestibulum ante ipsum primis in faucibus orci 
-                        luctus et ultrices posuere cubilia curae; Donec sollicitudin, lacus id suscipit 
-                        ultricies, ligula nunc sollicitudin nunc, at egestas sem tellus et nulla. 
-                        Integer at nulla pretium libero aliquet semper. Donec sed enim pellentesque, 
-                        consectetur ex cursus, pulvinar est. 
-                        Quisque ac mauris nulla. Pellentesque sollicitudin ligula eu erat dictum, 
-                        sit amet scelerisque felis convallis. Suspendisse potenti. Aliquam erat volutpat.
-                    </p>
-                </section>
-                <section>
-                    <div>
-                        <h1 style="margin-top: 1vw;">Goals</h1>
-                        <ol class="home-list">
-                            <li>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscin.
-                            </li>
-                            <li>
-                                Donec egestas tristique urna, vel vulputate libero.
-                            </li>
-                            <li>
-                                Duis laoreet felis ut tortor rhoncus, sit amet lacinia elit dign.
-                            </li>
-                            <li>
-                                Curabitur hendrerit lobortis odio, tincidunt mattis turpis dictum. 
-                            </li>   
-                        </ol>
-                    </div>
-                </section>
+                </div>
             </div>
-        </main>
-        <footer class="footer">
-            Secret text!
-        </footer>
-    </body>
+            <div class="row">
+                <div class="col-5">
+                    <p class="h1 heading">Compatibility</p>
+                    <p class="home-paragraph">To me, there hasn’t really been a question in a long time, as to whether I would be compatible with the subject of Information and Communication Technologies. 
+                        <br>
+                        Since young age I’ve been exposed to it in both a casual and a formal way. From engaging with IT related events, due to members of my family working in the sphere, all the way to gaining some minor knowledge myself while working through many internet guides, tutorials and courses since a young age.
+                        <br>
+                        Although I can’t say that coding is my life’s passion, and I want do it 24 hours a day until the day I die. I can say that i’m fine with most aspects of it, even enjoying some angles of problem solving and practical applications.
+                        <br>
+                        <br>
+                        I can say that so far things are as I expected them to be.
+                        </p>
+                </div>
+                <div class="col-4">
+                    <img src="resources/home_pic.png" alt="" class="img-fluid float-end"
+                        style="width: 400px; height: auto;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <p class="h1 heading">Goals</p>
+                    <ul class="home-list">
+                        <li>
+                            Deepen my knowledge of ICT in a higher academia setting
+                        </li>
+                        <li>
+                            Gain experience in a higher academia environment and gauge whether it’s the right path for me
+                        </li>
+                        <li>
+                            Professional networking
+                        </li>
+                        <li>
+                            Engage in an International experience
+                        </li>
+                        <li>
+                            Further my personal autonomy
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer overflow-scroll">
+        Secret text!
+    </footer>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</body>
+
 </html>
