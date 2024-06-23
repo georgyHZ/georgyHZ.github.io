@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Details</title>
+    <link href="css/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-black text-white p-4">
+        <nav class="space-x-4">
+            <a href="../index.html">Overview</a>
+            <a href="sell.html">Sell</a>
+            <a href="buy.html">Buy</a>
+        </nav>
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="bg-green-500 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold">Convert USD to Top Highest Traded Currencies</h2>
+            <section class="bg-green-500 p-4 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold">Buy Buy Buy - 1 USD</h2>
+                <ul id="high-traded" class="mt-4"></ul>
+            </section>
+            <div class="mt-4">
+                <label for="currency" class="block">Select Currency:</label>
+                <select id="currency" class="p-2 border rounded">
+                    <!-- Populate options with top traded currencies -->
+                </select>
+            </div>
+            <div class="mt-4">
+                <label for="amount" class="block">Amount in USD:</label>
+                <input type="number" id="amount" class="p-2 border rounded" />
+            </div>
+            <button id="convert" class="mt-4 bg-black text-white p-2 rounded">Convert</button>
+            <div id="result" class="mt-4"></div>
+        </section>
+    </main>
+    <script src="../js/convert.js"></script>
+    <script src="js/fetchCurrencies.js"></script>
+</body>
+</html>
