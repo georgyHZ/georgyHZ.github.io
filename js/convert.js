@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch("https://api.apilayer.com/exchangerates_data/latest?base=USD", requestOptions);
         const data = await response.json();
-
-        // Populate the currency dropdown with fetched data
+        
         for (const currency in data.rates) {
             const option = document.createElement('option');
             option.value = currency;
