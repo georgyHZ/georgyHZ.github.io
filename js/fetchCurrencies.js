@@ -18,17 +18,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         const highTradedCurrencies = ['KWD', 'BHD', 'OMR', 'JOD', 'GBP']; 
         const lowTradedCurrencies = ['IRR', 'VND', 'SLL', 'LAK', 'IDR']; 
 
-        highTradedCurrencies.forEach(currency => {
+        const fetchHighTraded = highTradedCurrencies.map(async (currency) => {
             const li = document.createElement('li');
             li.textContent = `${currency}: ${data.rates[currency]}`;
             highTradedList.appendChild(li);
         });
 
-        lowTradedCurrencies.forEach(currency => {
+        const fetchLowTraded = lowTradedCurrencies.map(async (currency) => {
             const li = document.createElement('li');
             li.textContent = `${currency}: ${data.rates[currency]}`;
             lowTradedList.appendChild(li);
         });
+
+        await Promise.all([...fetchHighTraded, ...fetchLowTraded]);
     } catch (error) {
         console.error('Error fetching currencies:', error);
     }
